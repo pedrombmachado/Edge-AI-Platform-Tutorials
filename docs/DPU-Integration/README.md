@@ -258,8 +258,15 @@ cp -rp ../files/recipes-core/base-files/ project-spec/meta-user/recipes-core/
 
 ## Step 3: Configure PetaLinux to install the `dnndk` files
 
+**For Petalinux 2018.2**
+
   ```
   vi project-spec/meta-user/recipes-core/images/petalinux-image.bbappend
+  ```
+ **For Petalinux 2018.3**
+
+  ```
+  vi project-spec/meta-user/recipes-core/images/petalinux-image-full.bbappend
   ```
 
   Add the following lines:
